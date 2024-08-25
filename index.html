@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musics</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+p {
+    word-spacing: 15px; /* Aumenta o espaço entre as palavras em 5 pixels */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.resultados {
+    width: 250px;
+    margin-right: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    display: none; /* Mantém escondido inicialmente */
+}
+
+
+.resultado-item {
+    padding: 5px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.resultado-item:hover {
+    background-color: #f0f0f0;
+}
+
+.content {
+    flex: 1;
+}
+
+.content-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#backToTopBtn {
+    display: none; /* Inicialmente escondido */
+    position: fixed; /* Fixa o botão na tela, mesmo quando o usuário rola a página */
+    bottom: 20px; /* Posiciona o botão 20px acima do fundo da página */
+    right: 30px; /* Posiciona o botão 30px à esquerda da borda direita da página */
+    z-index: 99; /* Garante que o botão fique no topo de outros elementos */
+    font-size: 28px; /* Tamanho da fonte */
+    /* background-color: #007bff;  Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 10px 15px; /* Espaçamento interno */
+    cursor: pointer; /* Mostra um cursor de mão */
+    transition: opacity 0.3s; /* Transição suave para o aparecimento e desaparecimento */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="searchBar" placeholder="Digite para pesquisar..." onkeyup="searchContent()">
+
+        <div id="resultados" class="resultados"></div>
+
+        <div class="content">
+            <div class="content-item" data-title="Ed Sheeran - Perfect">
+                <h2>Ed Sheeran - Perfect</h2>
+                <p>Tom G (AA B R P AA R2 final)</p>
+                <p>A: G	Em7	C	D	D4</p>
+                <p>R: Em7	C	G	D</p>
+            </div>
+            <div class="content-item" data-title="Rufus Wainwright - Hallelujah">
+                <h2>Rufus Wainwright - Hallelujah</h2>
+                <p>Tom C (4x)</p>
+                <p>A: C	Am	C	Am -- F	G	C	G</p>
+                <p>B: C	F	G -- Am	F	G -- G/B	E	Am</p>
+                <p>R: F	Am -- F	C G C G</p>
+            </div>
+            <div class="content-item" data-title="Bruno Mars - Marry You">
+                <h2>Bruno Mars - Marry You</h2>
+                <p>Tom B (2X A final dedilhado)</p>
+                <p>Capo 1</p>
+                <p>F	Gm	A#	F</p>
+            </div>
+            <div class="content-item" data-title="Vasco Rossi - Una Canzone Per Te">
+                <h2>Vasco Rossi - Una Canzone Per Te</h2>
+                <p>Tom C (AA B P A B P)</p>
+                <p>RIF: B: 0/1	E: 0</p>
+                <p>A: FM7	G	CM7 (2x)</p>
+                <p>B: Dm	Dm/C	G -- CM7	C/B	Am -- Dm	Dm/C	(G) -- CM7	C/B	FM7</p>  
+                <p>P: C	FM7	(C	G)</p>
+            </div>
+            <div class="content-item" data-title="Ed Sheeran - Photograph">
+                <h2>Ed Sheeran - Photograph</h2>
+                <p>Tom E (AA B R - A B R A? R final)</p>
+                <p>Capo 1</p>
+                <p>A: E	C#m7	B4	A9</p>
+                <p>Pré-R: C#m7	A9	E	B4</p>
+                <p>R: E	B4 	C#m7	A9</p>
+            </div>
+            <div class="content-item" data-title="Christina Perri - A Thousand Years">
+                <h2>Christina Perri - A Thousand Years</h2>
+                <p>Tom Bb / Db (AA P R A PP RR PP R final)</p>
+                <p>Capo 3</p>
+                <p>A: D#9	A#/D	Gm7	F/A	A#5</p>
+                <p>Ponte: Cm7 Gm	F9/A</p>
+                <p>R: A#	F9/A	Gm	F9/A - D#	F4	F</p>
+            </div>
+            <div class="content-item" data-title="Vasco Rossi - Come Nelle Favole">
+                <h2>Vasco Rossi - Come Nelle Favole</h2>
+                <p>Tom D (Alento A BB R - A R INTER R final)</p>
+                <p>Capo 3</p>
+                <p>A: D	Bm	G	A	(D) (Final R A)</p>
+            </div>
+            <div class="content-item" data-title="Judy Garland - Somewhere Over The Rainbow">
+                <h2>Judy Garland - Somewhere Over The Rainbow</h2>
+                <p>Tom C (A B A B A final)</p>
+                <p>A: C Am7	Em7	C7 - F	F9	C	C7 -- F	Fm	C	A7 -- Dm7	G7	C	(Dm7	G7)</p>
+                <p>R: C	Dm7	G7	Dm6	G7 -- C	D7	B4	G7	Dm7	Dm6	G7</p>
+            </div>
+            <div class="content-item" data-title="Coldplay - Viva La Vida">
+                <h2>Coldplay - Viva La Vida</h2>
+                <p>Tom Fm</p>
+                <p>Capo 1</p>
+                <p>C D9/11 G Em</p>
+            </div>
+            <div class="content-item" data-title="Vasco Rossi - Albachiara">
+                <h2>Vasco Rossi - Albachiara</h2>
+                <p>Tom C (AAdedi A Arock 5A 2dedi)</p>
+                <p>C	G	Am	C -- F	C	D	G7</p>
+            </div>
+            <div class="content-item" data-title="Chico Buarque - Geni e o Zepelim">
+                <h2>Chico Buarque - Geni e o Zepelim</h2>
+                <p>Tom Eb</p>
+                <p>A: Cm9 Fm6/C Cm9 Fm6/C Cm9 G7/B (PréR Cm G7) Cm9 (Fm6/C)</p> 
+                <p>B: Bb7	Eb/G	G7/B	Cm/G	Am7(b5)	Ab7(#11)	Gm7	G7</p>
+                <p>C: Bb/Ab	Eb7M/G	G7/B	Cm/G	Am7(b5)	Ab7(#11)	Gm7	G7</p>
+                <p>R: C G7(4) C G7(4) C A7 D7/A G7 Cm7/G Gm7 G7 C</p>
+            </div>
+            <div class="content-item" data-title="Marlene - Lata D'Água">
+                <h2>Marlene - Lata D'Água</h2>
+                <p>Tom C</p>
+                <p>A: Am F E</p>
+                <p>B: Am F E7 Am</p>
+                <p>R: E7 Am A7 Dm Dm Am E7 Am</p>
+            </div>
+            <div class="content-item" data-title="Academia da Berlinda - Dorival">
+                <h2>Academia da Berlinda - Dorival</h2>
+                <p>Tom F</p>
+                <p>A: Gm7 F7</p>
+                <p>B: Gm7 F7 Dm7</p>
+                <p>R: Dm7 A#7 Am7 A#7 C7 Dm7 Eb7/9 Dm7</p>
+                <p>Final: Dm7 Eb7/9</p>
+            </div>
+            <div class="content-item" data-title="Elis Regina - Tiro ao Alvaro">
+                <h2>Elis Regina - Tiro ao Alvaro</h2>
+                <p>Tom C</p>
+                <p>A: C A7 Dm G7 C C7</p>
+                <p>B: F Fm C Am Dm G7 C [G7]</p>
+                <p>A*: C A7 Dm Dm7M Dm7 G7 G#* C C7/B C/Bb</p>
+                <p>B*: F Fm6 C Am Dm G7 C</p>
+                <p>R: F G7 C Am Dm G7 C C7</p>
+                <p>R2: F C Am Dm G7 C</p>
+                <p>R3: F Fm C A7 Dm G7 C C7</p>
+            </div>
+            <div class="content-item" data-title="Roberto Silva - Falsa Baiana">
+                <h2>Roberto Silva - Falsa Baiana</h2>
+                <p>Tom A</p>
+                <p>Intro: A7M E7/9</p>
+                <p>A: A7M B7 E7/9 A7M A7</p>
+                <p>B: D7M Dm6 C#m7 F#7 B7 E7/9- A7M [F#7]</p>
+                <p>C: Bm7 E7/9- A7M A7 Bm7 E7/9 A7M A7</p>
+                <p>D7M Dm6 C#m7 F#7 Bm7 E7/9- A7M E7/9</p>
+            </div>
+            <div class="content-item" data-title="Caetano Veloso - Sonhos">
+                <h2>Caetano Veloso (Peninha) - Sonhos</h2>
+                <p>Tom Cm</p>
+                <p>Intro: Cm7(9)  Cm7  Cm7(9) Cm7  Ab6  G7(5+) G7</p>
+                <p>A: Cm7 Dm7(5-) G7 C7 C7(9-) Fm7</p>
+                <p>B: Dm7(5-) G7 Cm7 Cm7/Bb Ab6 G7</p>
+                <p>C: Cm7 Dm7(5-) G7 C7 C7(9-) Fm7</p>
+                <p>D: Dm7(5-) Ab7(13) G7 Cm7 Cm7/Bb Ab6 G7</p>
+                <p>R: Cm7 Dm7(5-) G7 C7 C7(9-) Fm7</p>
+                <p>R2: Dm7(5-) Ab6 G7 Cm7 Cm7 Dm7(5-) Ab7 G7 Cm7 G7(5+) [Cm7]</p>
+            </div>
+            <div class="content-item" data-title="Milton Nascimento - Quem Sabe Isso Quer Dizer Amor">
+                <h2>Milton Nascimento - Quem Sabe Isso Quer Dizer Amor</h2>
+                <p>Tom G</p>
+                <p>Intro: F#m7(5-)  B7(9-/13-)</p>
+                <p>A: Em7(9) Em9/D# Em9/D C#m7(5-) C7M G/B Am7 C/D</p>
+                <p>R: G D/F# Dm/F E7 Am Am7M Am7 D4(7)</p>
+                <p>R2: G D/F# Dm7 G G/B C Cm7 G/B Em7 Am7 D4(7) G C/G G C/G</p>
+            </div>
+            <div class="content-item" data-title="Adoniran Barbosa - Trem das Onze">
+                <h2>Adoniran Barbosa - Trem das Onze???</h2>
+                <p>Tom Am</p>
+                <p>Intro: Dm Bm7(5-) Am/E Am Am/G F#° F7 E7 E7/B Am A7 Dm Bm7(5-) Am/E Am Am/G F#° F7  E7 E7/B Am E7</p>
+                <p>A: Am Am/C Am E7 A7</p>
+                <p>R: Dm Bm7(5-) Am F7 E7 E7/D E7/G# Am</p>
+                <p>E Am/C E7 A7</p>
+                <p class="refrao">Dm Bm7(5-) Am F7 E7 E7/D E7/G# Am</p>
+                <p>A/C# A7 Dm D#° A° E7</p> 
+                <p>Dm Bm7(5-) Am/E Am Am/G F#° F7 E7 E7/B Am E7</p>
+                <p>Dm Bm7(5-) Am/E Am Am/G F#° F7 E7 E7/B Am A7 Dm Bm7(5-) Am/E Am Am/G F#° F7 E7 E7/B Am   E7</p>
+            </div>
+            <div class="content-item" data-title="Julio Secchin - Jovem">
+                <h2>Julio Secchin - Jovem</h2>
+                <p>Tom Eb</p>
+                <p>A: Eb Eb/G Cm7 Eb7(9) Ab7M Ab7M/G Fm7 Bb7 (Eb Bb7)</p>
+                <p>R: Eb Bb/D Cm7 Cm7/Bb Ab7M Bb7 Eb Bb7 (Ab7M Bb7 Eb Bb7)</p>
+            </div>
+            <div class="content-item" data-title="1">
+                <h2>1</h2>
+                <p>a</p>
+            </div>
+            <div class="content-item" data-title="1">
+                <h2>1</h2>
+                <p>a</p>
+            </div>
+            <div class="content-item" data-title="1">
+                <h2>1</h2>
+                <p>a</p>
+            </div>
+            <div class="content-item" data-title="1">
+                <h2>1</h2>
+                <p>a</p>
+            </div>
+            <!-- Adicione mais divs conforme necessário -->
+        </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Voltar ao topo">⬆️</button>
+
+    
+    <script>
+      function searchContent() {
+    const searchTerm = document.getElementById('searchBar').value.toLowerCase();
+    const contentItems = document.querySelectorAll('.content-item');
+    const resultados = document.getElementById('resultados');
+
+    // Limpar resultados anteriores
+    resultados.innerHTML = '';
+    let found = false;
+
+    contentItems.forEach(item => {
+        const title = item.dataset.title.toLowerCase();
+        if (title.includes(searchTerm)) {
+            found = true;
+
+            // Criar elemento na lista de resultados
+            const resultItem = document.createElement('div');
+            resultItem.className = 'resultado-item';
+            resultItem.textContent = title;
+            resultItem.onclick = function() {
+                item.scrollIntoView({ behavior: 'smooth' });
+                highlightContent(item);
+            };
+
+            resultados.appendChild(resultItem);
+        }
+    });
+
+    // Mostrar ou esconder a aba de resultados
+    if (searchTerm && found) {
+        resultados.style.display = 'block';
+    } else {
+        resultados.style.display = 'none';
+    }
+}
+
+function highlightContent(item) {
+    // Remover destaque de itens anteriores
+    document.querySelectorAll('.content-item').forEach(i => i.style.borderColor = '#ccc');
+
+    // Destacar o item selecionado
+    item.style.borderColor = '#007bff';
+}
+
+
+
+
+// Quando o usuário rolar 20px da parte superior da página, mostrar o botão
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+
+// Quando o usuário clicar no botão, rolar até o topo da página
+function scrollToTop() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+
+    </script>
+</body>
+</html>
