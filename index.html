@@ -3,95 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Musics</title>
-    <style>
-      body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 94vw;
-}
-
-p {
-    word-spacing: 15px; /* Aumenta o espaço entre as palavras em 15 pixels */
-}
-
-.container {
-    display: flex;
-    width: 95%;
-    max-width: 100vw;
-    margin: 0 auto;
-    padding: 20px;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-
-#searchBar {
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.resultados {
-    width: 90%;
-    margin-right: 20px;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-    display: none; /* Mantém escondido inicialmente */
-    text-align: center;
-    font-size: 1.2em;
-}
-
-
-.resultado-item {
-    padding: 5px 10px;
-    cursor: pointer;
-    border-bottom: 1px solid #ddd;
-}
-
-.resultado-item:hover {
-    background-color: #f0f0f0;
-}
-
-.content {
-    flex: 1;
-}
-
-.content-item {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#backToTopBtn {
-    display: none; /* Inicialmente escondido */
-    position: fixed; /* Fixa o botão na tela, mesmo quando o usuário rola a página */
-    bottom: 20px; /* Posiciona o botão 20px acima do fundo da página */
-    right: 5px; /* Posiciona o botão 30px à esquerda da borda direita da página */
-    z-index: 99; /* Garante que o botão fique no topo de outros elementos */
-    font-size: 28px; /* Tamanho da fonte */
-    background: none; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border: none; /* Remove a borda */
-    border-radius: 10px; /* Borda arredondada */
-    padding: 10px 15px; /* Espaçamento interno */
-    cursor: pointer; /* Mostra um cursor de mão */
-    transition: opacity 0.3s; /* Transição suave para o aparecimento e desaparecimento */
-}
-
-
-    </style>
 </head>
 <body>
     <div class="container">
@@ -337,6 +250,32 @@ p {
                 <p>B: F#m7(5-) B7(9-) Bb7M A7(13-) F#m7(5-) B7(9-) Em7(9) A7(13-) D7(9) G7(4/9) G7(9-)</p>
                 <p>R: C7(9) F7M Bb7(9) Em7(9) A7(13-) D7(9) G7(4/9) G7(9-) Gm7 (C6(9) G7(13-))</p>
             </div>
+            <div class="content-item" data-title="Djavan - Eu Te Devoro">
+                <h2>Djavan - Eu Te Devoro</h2>
+                <p>Tom Bm</p>
+                <p>A: D7M  Bm7(9)  G9  (C7/9) Em  A7(4/9)</p>
+                <p>R: Bm B9/A G7M -- F#m7  G7M</p>
+            </div>
+            <div class="content-item" data-title="">
+                <h2></h2>
+                <p>Tom </p>
+            </div>
+            <div class="content-item" data-title="">
+                <h2></h2>
+                <p>Tom </p>
+            </div>
+            <div class="content-item" data-title="">
+                <h2></h2>
+                <p>Tom </p>
+            </div>
+            <div class="content-item" data-title="">
+                <h2></h2>
+                <p>Tom </p>
+            </div>
+            <div class="content-item" data-title="">
+                <h2></h2>
+                <p>Tom </p>
+            </div>
 
 
 
@@ -397,7 +336,7 @@ p {
                 <p>Tom E</p>
                 <p>E A B E C#m F#m B7 E</p>
                 <p>R: E A B7 E C#m F#m B7 E</p>
-                <p>E Ebº C#m Bm A B7</p>
+                <p>Final: E Ebº C#m Bm A B7</p>
             </div>
 
 
@@ -411,17 +350,15 @@ p {
             </div>
 
 
-            <div class="content-item" data-title="Never Shout Never - Yesterday">
-                <h2>Never Shout Never - Yesterday</h2>
+            <div class="content-item" data-title="The Beatles- Yesterday">
+                <h2>The Beatles - Yesterday</h2>
                 <p>Tom G</p>
-                <p>A: G F#m7 B7 Em Em7 C D D7 G</p>
-                <p>B: D Em7 A7 C G</p>
+                <p>A: G F#m7 B7 Em Em7</p>
+                <p>B: C D D7 G G/F#</p>
+                <p>C: Em7 A7 C G</p>
                 <p>R: B7/4  B7  Em  D  C</p>
                 <p>R2: Em D D7 G</p>    
             </div>
-
-
-
             <div class="content-item" data-title="The Beatles - Hey Jude">
                 <h2>The Beatles - Hey Jude</h2>
                 <p>Tom F</p>
@@ -465,10 +402,55 @@ p {
                 <p>R: D F#m Bm F#m Em A</p>
                 <p>Final: Dm  Dm/C  Dm/B  Bb (Dm  C9)</p>
             </div>
-            <div class="content-item" data-title="The Beatles - Come Together">
-                <h2>The Beatles - Come Together</h2>
+            <div class="content-item" data-title="The Beatles - Across The Universe">
+                <h2>The Beatles - Across The Universe</h2>
                 <p>Tom D</p>
-                <p>A: D5</p>
+                <p>A: D Bm F#m -- Em7 (Gm) A A7</p>
+                <p>R: D A7sus4 A7 -- A A7 -- G D (D)</p>
+            </div>
+            <div class="content-item" data-title="The Beatles - Golden Slumbers">
+                <h2>The Beatles - Golden Slumbers</h2>
+                <p>Tom B</p>
+                <p>A: Am7 Dm  D4/A  D5/A  D4/A -- G7 C</p>
+                <p>B: E Am Dm G7 C</p>
+                <p>R: C F</p>
+                <p>B: E Am Dm G7 C</p>
+            </div>
+            <div class="content-item" data-title="The Beatles - Help!">
+                <h2>The Beatles - Help!</h2>
+                <p>Tom D</p>
+                <p>Intro: Bm G E A</p>
+                <p>A: A C#m F#m -- D G A</p>
+                <p>R: Bm G E A</p>
+                <p>Final: F#m A</p>
+            </div>
+            <div class="content-item" data-title="The Beatles - I Want To Hold Your Hand">
+                <h2>The Beatles - I Want To Hold Your Hand</h2>
+                <p>Tom C</p>
+                <p>A: G D Em B7</p>
+                <p>R: C D G Em</p>
+                <p>P: Dm G C Am -- Dm G C -- C D</p>
+            </div>
+            <div class="content-item" data-title="The Beatles - Strawberry Fields Forever">
+                <h2>The Beatles - Strawberry Fields Forever</h2>
+                <p>Tom A</p>
+                <p>A: Bb Fm G7 -- Eb/Bb G7 Eb/Bb Bb</p>
+                <p>B: F F7+ F7 -- Gm Gm/F Eb/Bb</p>
+                <p>C: Eb/Bb F7 Bb -- Dm7/A Gm -- Eb/Bb F7 Eb/Bb Bb</p>
+                <p>Final: Eb/Bb Bb (F Eb/Bb)</p>
+                <p>Rif: Bb Bb/Ab Bb/Ab Bb Bb</p>
+            </div>
+            <div class="content-item" data-title="The Beatles - Twist And Shout">
+                <h2>The Beatles - Twist And Shout</h2>
+                <p>Tom D</p>
+                <p>A7 D G A</p>
+            </div>
+            <div class="content-item" data-title="The Beatles - We Can Work It Out">
+                <h2>The Beatles - We Can Work It Out</h2>
+                <p>Tom G</p>
+                <p>A: D Dsus4 D - Dsus4 C D</p>
+                <p>R: G D G A</p>
+                <p>P: Bm Bm/A G F#sus4 -- F# Bm Bm/A Bm/G Bm/F#</p>
             </div>
             <div class="content-item" data-title="">
                 <h2></h2>
@@ -478,21 +460,41 @@ p {
                 <h2></h2>
                 <p>Tom </p>
             </div>
-            <div class="content-item" data-title="">
-                <h2></h2>
-                <p>Tom </p>
+
+
+
+
+            <div class="content-item" data-title="Teddy Swims - Lose Control">
+                <h2>Teddy Swims - Lose Control</h2>
+                <p>Tom F#</p>
+                <p>F#m A D Db7</p>
             </div>
-            <div class="content-item" data-title="">
-                <h2></h2>
-                <p>Tom </p>
+
+
+
+            <div class="content-item" data-title="Hozier - Too Sweet">
+                <h2>Hozier - Too Sweet</h2>
+                <p>Tom Gm</p>
+                <p>Em  D/F#  G  Am C/B  C  D  B7</p>
+                <p>R: B7 Em D/F# G Am C/B C G (D B7)</p>
+                <p>P: Em  D/F#  G  Am C/B  C G D/F#</p>
             </div>
-            <div class="content-item" data-title="">
-                <h2></h2>
-                <p>Tom </p>
+
+
+
+            <div class="content-item" data-title="Gnarls Barkley - Crazy">
+                <h2>Gnarls Barkley - Crazy</h2>
+                <p>Tom Cm</p>
+                <p>A: Cm (C) Eb7M Ab G4 G7</p>
             </div>
-            <div class="content-item" data-title="">
-                <h2></h2>
-                <p>Tom </p>
+
+
+
+            <div class="content-item" data-title="Zeca Veloso - Todo Homem">
+                <h2>Zeca Veloso - Todo Homem</h2>
+                <p>Tom Db</p>
+                <p>A: F#/G# F#9 F# D#m7 -- F#/G# A#m7</p>
+                <p>R: F# G# Fm7 F# G# C#</p>
             </div>
             <!-- Adicione mais divs conforme necessário -->
             <div class="content-item" data-title="">
@@ -504,72 +506,6 @@ p {
 
     <button onclick="scrollToTop()" id="backToTopBtn" title="Voltar ao topo">⬆️</button>
 
-    
-    <script>
-      function searchContent() {
-    const searchTerm = document.getElementById('searchBar').value.toLowerCase();
-    const contentItems = document.querySelectorAll('.content-item');
-    const resultados = document.getElementById('resultados');
-
-    // Limpar resultados anteriores
-    resultados.innerHTML = '';
-    let found = false;
-
-    contentItems.forEach(item => {
-        const title = item.dataset.title.toLowerCase();
-        if (title.includes(searchTerm)) {
-            found = true;
-
-            // Criar elemento na lista de resultados
-            const resultItem = document.createElement('div');
-            resultItem.className = 'resultado-item';
-            resultItem.textContent = title;
-            resultItem.onclick = function() {
-                item.scrollIntoView({ behavior: 'smooth' });
-                highlightContent(item);
-            };
-
-            resultados.appendChild(resultItem);
-        }
-    });
-
-    // Mostrar ou esconder a aba de resultados
-    if (searchTerm && found) {
-        resultados.style.display = 'block';
-    } else {
-        resultados.style.display = 'none';
-    }
-}
-
-function highlightContent(item) {
-    // Remover destaque de itens anteriores
-    document.querySelectorAll('.content-item').forEach(i => i.style.borderColor = '#ccc');
-
-    // Destacar o item selecionado
-    item.style.borderColor = '#007bff';
-}
-
-
-
-
-// Quando o usuário rolar 20px da parte superior da página, mostrar o botão
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    const backToTopBtn = document.getElementById("backToTopBtn");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backToTopBtn.style.display = "block";
-    } else {
-        backToTopBtn.style.display = "none";
-    }
-}
-
-// Quando o usuário clicar no botão, rolar até o topo da página
-function scrollToTop() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
-}
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

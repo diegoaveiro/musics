@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 94vw;
+}
+
+p {
+  word-spacing: 15px; /* Aumenta o espaço entre as palavras em 15 pixels */
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 20px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchBar {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.resultados {
+  width: 90%;
+  margin-right: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  display: none; /* Mantém escondido inicialmente */
+  text-align: center;
+  font-size: 1.2em;
+}
+
+
+.resultado-item {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.resultado-item:hover {
+  background-color: #f0f0f0;
+}
+
+.content {
+  flex: 1;
+}
+
+.content-item {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#backToTopBtn {
+  display: none; /* Inicialmente escondido */
+  position: fixed; /* Fixa o botão na tela, mesmo quando o usuário rola a página */
+  bottom: 20px; /* Posiciona o botão 20px acima do fundo da página */
+  right: 5px; /* Posiciona o botão 30px à esquerda da borda direita da página */
+  z-index: 99; /* Garante que o botão fique no topo de outros elementos */
+  font-size: 28px; /* Tamanho da fonte */
+  background: none; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda */
+  border-radius: 10px; /* Borda arredondada */
+  padding: 10px 15px; /* Espaçamento interno */
+  cursor: pointer; /* Mostra um cursor de mão */
+  transition: opacity 0.3s; /* Transição suave para o aparecimento e desaparecimento */
+}
+
+
