@@ -1,705 +1,733 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Musics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Musics</title>
 </head>
 <body>
-    <div class="container">
-        <input type="text" id="searchBar" placeholder="Digite para pesquisar..." onkeyup="searchContent()">
-
-        <div id="resultados" class="resultados"></div>
+<div class="container">
+<input type="text" id="searchBar" placeholder="Digite para pesquisar..." onkeyup="searchContent()">
 
-        <div class="content">
-
-
-
-            <div class="content-item" data-title="Gilberto Gil - Esperando Na Janela">
-                <h2>Gilberto Gil - Esperando Na Janela</h2>
-                <p>Tom E</p>
-                <p>Intro/A: B2  E  B2  E (A E)</p>
-                <p>R: (F*) F#m B7 G#m C#m -- (F*) F#m B7 E (A E) F*</p>
-                <p>Final: B E</p>
-            </div>
-            
-            
-
-            <div class="content-item" data-title="Rufus Wainwright - Hallelujah">
-                <h2>Rufus Wainwright - Hallelujah</h2>
-                <p>Tom C (4x)</p>
-                <p>A: C	Am	C	Am -- F	G	C	G</p>
-                <p>B: C	F	G -- Am	F	G -- G/B	E	Am</p>
-                <p>R: F	Am -- F	C G C G</p>
-            </div>
+<div id="resultados" class="resultados"></div>
 
+<div class="content">
 
 
-            <div class="content-item" data-title="Bruno Mars - Marry You">
-                <h2>Bruno Mars - Marry You</h2>
-                <p>Tom B (2X A final dedilhado)</p>
-                <p>Capo 1</p>
-                <p>F	Gm	A#	F</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Vasco Rossi - Una Canzone Per Te">
-                <h2>Vasco Rossi - Una Canzone Per Te</h2>
-                <p>Tom C (AA B P A B P)</p>
-                <p>RIF: B: 0/1	E: 0</p>
-                <p>A: FM7	G	CM7 (2x)</p>
-                <p>B: Dm	Dm/C	G -- CM7	C/B	Am -- Dm	Dm/C	(G) -- CM7	C/B	FM7</p>  
-                <p>P: C	FM7	(C	G)</p>
-            </div>
-            <div class="content-item" data-title="Vasco Rossi - Come Nelle Favole">
-                <h2>Vasco Rossi - Come Nelle Favole</h2>
-                <p>Tom D (Alento A BB R - A R INTER R final)</p>
-                <p>D	Bm	G	A	(D) (FinalRef A)</p>
-            </div>
-            <div class="content-item" data-title="Vasco Rossi - Albachiara">
-                <h2>Vasco Rossi - Albachiara</h2>
-                <p>Tom C (AAdedi A Arock 5A 2dedi)</p>
-                <p>C	G	Am	C -- F	C	D	G7</p>
-            </div>
-
-
-            <div class="content-item" data-title="Ed Sheeran - Perfect">
-                <h2>Ed Sheeran - Perfect</h2>
-                <p>Tom G (AA B R P AA R2 final)</p>
-                <p>A: G	Em7	C	D	D4</p>
-                <p>R: Em7	C	G	D</p>
-            </div>
-            <div class="content-item" data-title="Ed Sheeran - Photograph">
-                <h2>Ed Sheeran - Photograph</h2>
-                <p>Tom E (AA B R - A B R Pré R final)</p>
-                <p>Capo 1</p>
-                <p>A: E	C#m7	B4	A9</p>
-                <p>PréRef: C#m7	A9	E	B4</p>
-                <p>R: E	B4 	C#m7	A9</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Christina Perri - A Thousand Years">
-                <h2>Christina Perri - A Thousand Years</h2>
-                <p>Tom Bb / Db (AA P R A PP RR PP R final)</p>
-                <p>Capo 3</p>
-                <p>A: D#9	A#/D	Gm7	F/A	A#5</p>
-                <p>Ponte: Cm7 Gm	F9/A</p>
-                <p>R: A#	F9/A	Gm	F9/A -- D#	F4	F</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Judy Garland - Somewhere Over The Rainbow">
-                <h2>Judy Garland - Somewhere Over The Rainbow</h2>
-                <p>Tom C (A B A B A final)</p>
-                <p>A: C Am7	Em7	C7 - F	F9	C	C7 -- F	Fm	C	A7 -- Dm7	G7	C	(Dm7	G7)</p>
-                <p>R: C	Dm7	G7	Dm6	G7 -- C	D7	B4	G7	Dm7	Dm6	G7</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Coldplay - Viva La Vida">
-                <h2>Coldplay - Viva La Vida</h2>
-                <p>Tom Fm</p>
-                <p>Capo 1</p>
-                <p>C D9/11 G Em</p>
-            </div>
 
+<div class="content-item" data-title="Gilberto Gil - Esperando Na Janela">
+<h2>Gilberto Gil - Esperando Na Janela</h2>
+<p>Tom E</p>
+<p>Intro/A: B2  E  B2  E (A E)</p>
+<p>R: (F*) F#m B7 G#m C#m -- (F*) F#m B7 E (A E) F*</p>
+<p>Final: B E</p>
+</div>
 
 
-            <div class="content-item" data-title="Marlene - Lata D'Água">
-                <h2>Marlene - Lata D'Água</h2>
-                <p>Tom C</p>
-                <p>A: Am F E</p>
-                <p>B: Am F E7 E7 Am</p>
-                <p>R: E7 Am A7 Dm Dm Am E7 Am</p>
-            </div>
 
+<div class="content-item" data-title="Rufus Wainwright - Hallelujah">
+<h2>Rufus Wainwright - Hallelujah</h2>
+<p>Tom C (4x)</p>
+<p>A: C	Am	C	Am -- F	G	C	G</p>
+<p>B: C	F	G -- Am	F	G -- G/B	E	Am</p>
+<p>R: F	Am -- F	C G C G</p>
+</div>
 
 
-            <div class="content-item" data-title="Academia da Berlinda - Dorival">
-                <h2>Academia da Berlinda - Dorival</h2>
-                <p>Tom F</p>
-                <p>A: Gm7 F7</p>
-                <p>B: Gm7 F7 Dm7</p>
-                <p>R: Dm7 A#7 Am7 A#7 C7 Dm7 Eb7/9 Dm7</p>
-                <p>Final: Dm7 Eb7/9</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Elis Regina - Tiro ao Alvaro">
-                <h2>Elis Regina - Tiro ao Alvaro</h2>
-                <p>Tom C</p>
-                <p>A: (C) A7 Dm G7 C C7</p>
-                <p>B: F Fm C Am Dm G7 C [G7]</p>
-                <p>A2: C A7 Dm Dm7M Dm7 G7 G#* C C7/B C/Bb</p>
-                <p>B2: F Fm6 C Am Dm G7 C</p>
-                <p>R: F G7 C Am Dm G7 C C7</p>
-                <p>R2: F Fm C Am Dm G7 C</p>
-                <p>Final: F Fm C A7 Dm G7 C C7</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Roberto Silva - Falsa Baiana">
-                <h2>Roberto Silva - Falsa Baiana</h2>
-                <p>Tom A</p>
-                <p>Intro: A7M E7/9</p>
-                <p>A: A7M B7 E7/9 A7M A7</p>
-                <p>B: D7M Dm6 C#m7 F#7 B7 E7/9- A7M (F#7)</p>
-                <p>C: Bm7 E7/9- A7M A7 Bm7 E7/9 A7M A7</p>
-                <p>D: D7M Dm6 C#m7 F#7 Bm7 E7/9- (A7M E7/9)</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Caetano Veloso - Sonhos">
-                <h2>Caetano Veloso (Peninha) - Sonhos</h2>
-                <p>Tom Cm</p>
-                <p>Intro: Cm7(9)  Cm7  Cm7(9) Cm7  Ab6  G7(5+) G7</p>
-                <p>A: Cm7 Dm7(5-) G7 C7 C7(9-) Fm7</p>
-                <p>B: Dm7(5-) G7 Cm7 Cm7/Bb Ab6 G7</p>
-                <p>C: Cm7 Dm7(5-) G7 C7 C7(9-) Fm7</p>
-                <p>D: Dm7(5-) Ab7(13) G7 Cm7 Cm7/Bb Ab6 G7</p>
-                <p>R: Cm7 Dm7(5-) G7 C7 C7(9-) Fm7</p>
-                <p>R2: Dm7(5-) Ab6 G7 Cm7 Cm7 Dm7(5-) Ab7 G7 Cm7 G7(5+) [Cm7]</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Milton Nascimento - Quem Sabe Isso Quer Dizer Amor">
-                <h2>Milton Nascimento - Quem Sabe Isso Quer Dizer Amor</h2>
-                <p>Tom G</p>
-                <p>Intro: F#m7(5-)  B7(9-/13-)</p>
-                <p>A: Em7(9) Em9/D# Em9/D C#m7(5-) C7M G/B Am7 C/D</p>
-                <p>R: G D/F# Dm/F E7 Am Am7M Am7 D4(7)</p>
-                <p>R2: G D/F# Dm7 G G/B C Cm7 G/B Em7 Am7 D4(7) G C/G G C/G</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Adoniran Barbosa - Trem das Onze">
-                <h2>Adoniran Barbosa - Trem das Onze</h2>
-                <p>Tom Am</p>
-                <p>Intro/R: Dm Bm7(5-) Am/E -- Am Am/G F#° F7 E7 E7/B Am (E7) A7</p>
-                <p>A: Am Am/C Am E7 A7</p>
-                <p>R2: Dm Bm7(5-) Am F7 E7 E7/D E7/G# Am -- E7</p>
-                <p>P: A/C# A7 Dm D#° A° E7</p> 
-            </div>
-
-
-
-            <div class="content-item" data-title="Julio Secchin - Jovem">
-                <h2>Julio Secchin - Jovem</h2>
-                <p>Tom Eb</p>
-                <p>A: Eb Eb/G Cm7 Eb7(9) Ab7M Ab7M/G Fm7 Bb7 (Eb Bb7)</p>
-                <p>R: Eb Bb/D Cm7 Cm7/Bb Ab7M Bb7 Eb Bb7 (Ab7M Bb7 Eb Bb7)</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Paulinho da Viola - Timoneiro">
-                <h2>Paulinho da Viola - Timoneiro</h2>
-                <p>Tom Am</p>
-                <p>Intro: Am7 B7 Dm E7</p>
-                <p>R: Am7 Bm7(5-) E7 Am7</p>
-                <p>R2: Am7/G D/F# Dm/F E7 Am7</p>
-                <p>A: Am7 A7 Dm G7 G7 C E7 E7 Am7 Am7/G D/F# Dm/F E7 Am7</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Chico Buarque - Geni e o Zepelim">
-                <h2>Chico Buarque - Geni e o Zepelim</h2>
-                <p>Tom Eb</p>
-                <p>A: Cm9 Fm6/C Cm9 Fm6/C Cm9 G7/B (PréR Cm G7) Cm9 (Fm6/C)</p> 
-                <p>B: Bb7	Eb/G	G7/B	Cm/G	Am7(b5)	Ab7(#11)	Gm7	G7</p>
-                <p>C: Bb/Ab	Eb7M/G	G7/B	Cm/G	Am7(b5)	Ab7(#11)	Gm7	G7</p>
-                <p>R: C G7(4) C G7(4) C A7 D7/A G7 Cm7/G Gm7 G7 C</p>
-            </div>
-            <div class="content-item" data-title="Chico Buarque - Sentimental">
-                <h2>Chico Buarque - Sentimental</h2>
-                <p>Tom C</p>
-                <p>A: F/C C/G C5+ G# F7M Fm6 Em7 D#7M G#7M</p>
-                <p>B: F/C C/G C5+/G# F7M Fm6 Em7 D#7M G#7M F/C
-                <p>C: D#7M B6/5b C7M C#° Dm7 Dm/C Am7/#5 G#6/5b</p>
-                <p>D: C/G C5+/G# F7M Fm6 Em7 D#7M G#7M F/C C/G C5+/G# F7M Fm6</p>
-                <p>E: Em7 D#7M G#7M F/C </p>
-                <p>F: D#7M B6/5b Cm7/9 G#6/5b -- C/G C5+/G# F7M Fm6 Em7 D#7M G#7M F/C</p>
-            </div>
-            <div class="content-item" data-title="Chico Buarque - A Banda">
-                <h2>Chico Buarque - A Banda</h2>
-                <p>Tom D</p>
-                <p>R: D6(9) A7 F#m7 B7 E7(9) A7</p>
-                <p>A: D7M A7 Am7 D7(9) G7M F#7 B7(9) E7(9) A7</p>
-                <p>A2: D7M A7 Am/C B7 G7M F#7 B7(9) B7 E7(9) A7 (D7M)</p>
-            </div>
-            <div class="content-item" data-title="Chico Buarque - Essa Moça ta Diferente">
-                <h2>Chico Buarque - Essa Moça ta Diferente</h2>
-                <p>Tom Bm</p>
-                <p>A: Bm7 G7 F#7 Bm7 B7(9-) Em7(9) A7(13) Am6 G7M G7 F#7</p>
-                <p>R: Bm7 Bm/A G7M Bm7/F# C#° Bm7 F#7</p>
-                <p>R: Bm7 Bm/A G7M Bm7/F# C#° Bm7 G7 F#7</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Djavan - Flor de Lis">
-                <h2>Djavan - Flor de Lis</h2>
-                <p>Tom C</p>
-                <p>Intro: C7M(9) Fm6</p>
-                <p>A: C7M(9) Bm7(5-) E7(13-) Am7(9) Gm7 C7(9)</p> 
-                <p>B: F#m7(5-) B7(9-) Bb7M A7(13-) F#m7(5-) B7(9-) Em7(9) A7(13-) D7(9) G7(4/9) G7(9-) (Gm7)</p>
-                <p>R: C7(9) F7M Bb7(9) Em7(9) A7(13-) D7(9) G7(4/9) G7(9-) Gm7 (C6(9) G7(13-))</p>
-            </div>
-            <div class="content-item" data-title="Djavan - Eu Te Devoro">
-                <h2>Djavan - Eu Te Devoro</h2>
-                <p>Tom Bm</p>
-                <p>A: D7M  Bm7(9)  G7M  (C7/9) Em  A7(4/9)</p>
-                <p>R: Bm7 Bm/A G7M -- F#m7  G7M</p>
-            </div>
-            <div class="content-item" data-title="Djavan - Oceano">
-                <h2>Djavan - Oceano</h2>
-                <p>Tom </p>
-                <p>A: D G7M A7 A#* Bm Bm7M</p>
-                <p>B: Bm7 Bm6 Am7 D7/9 Gm7 C7/9 F#m7 B7/9- E7/9 A7/4</p>
-                <p>R: Dm7 C7(4/9) F7M -- Em7/5- A7/13-</p>
-                <p>R2: Dm7 C7(4/9) F7M Gm7 Am7 Bb7M Em7/9 A7/13-</p>
-                <p>R3: D F7M G7M C D F7M G7M C D</p>
-                <p>Final: F7M G7M C D</p>
-            </div>
-            <div class="content-item" data-title="Djavan - Samurai">
-                <h2>Djavan - Samurai?</h2>
-                <p>Tom </p>
-                <p>A: E7M  Gº  G#m7  C#7(9)</p>
-                <p>B: E7M  Gº  G#m7  B7(13) -- (B7/2)</p>
-                <p>C: A7M G7M F#m7 B7(9)</p>
-                <p>D: A7M A#m7(5-) D#7(9-)</p>
-            </div>
-            <div class="content-item" data-title="Djavan - Sina">
-                <h2>Djavan - Sina</h2>
-                <p>Tom </p>
-                <p>A: A D/A A G#m7(11) C#7(9-) F#m7 C#m7 D7M D#°</p>
-                <p>B: E4(7/9) D4(7/9) D7(9) C#7(9+) C#7(9-/13-) F#m7 E4(7/9) D4(7/9) E4(7/9)</p>
-                <p>R: A D/A A G#m7(11) C#7(9-) F#m7 C#m7 D7M E4(7/9) A</p>
-                <p>P: A D/A</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Marina Sena - Me Toca">
-                <h2>Marina Sena - Me Toca</h2>
-                <p>Tom Cm</p>
-                <p>Eb7+ Fm7/b5 Cm7 F7/9</p>
-            </div>
-            <div class="content-item" data-title="Marina Sena - Ombrim(Ai Que Delícia o Verão)">
-                <h2>Marina Sena - Ombrim(Ai Que Delícia o Verão)</h2>
-                <p>Tom Bb</p>
-                <p>Bb Gm Dm F</p>
-            </div>
-            <div class="content-item" data-title="Marina Sena - Por Supuesto">
-                <h2>Marina Sena - Por Supuesto</h2>
-                <p>Tom Dm</p>
-                <p>Bb G7 Dm</p>
-            </div>
-            <div class="content-item" data-title="Marina Sena - Voltei Pra Mim">
-                <h2>Marina Sena - Voltei Pra Mim</h2>
-                <p>Tom Bb</p>
-                <p>Bb7M Gm7 Am7</p>
-            </div>
-            <div class="content-item" data-title="Marina Sena - Pelejei">
-                <h2>Marina Sena - Pelejei</h2>
-                <p>Tom Am</p>
-                <p>Am7 C7/9 F7M D7/9 (D7/9-)</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Tom Jobim - Desafinado">
-                <h2>Tom Jobim - Desafinado</h2>
-                <p>Tom D</p>
-                <p>A: E7M F#7(9) F#m7(9) G° G#m7(5-) C#7(9-) F#m7(9) G#7(13-) C#7M(9) C#7(9-) F#7(9) F7M/A F6/A</p>  
-                <p>B: E7M F#7(9) F#m7(9) G° G#m7(5-) C#7(9-) F#m7(9) G#7(13-) C#m7/9 A#° G#7M G7(13-) F#7(13) B7/13</p>
-                <p>C: G#7M Aº A#m7 D#7(9) G#7M G#m7 A#m7 D#7(9)</p>
-                <p>D: B7M Cº C#m7 F#7(13) F#m7(9) Dm6 F#7(9) B7(9-)</p>
-                <p>E: E6 F#7(9) F#m7(9) B7(13) G#m7(5-) C#7(9-)</p>
-                <p>F: A7M Am7 G#m7 G° F#7(9) F7M/A F6/A F#7(9) F#m7(9) B7(9-) E6</p>
-                <p>Final: E7M E7 E7M E7 E7M E7 E7M E7</p>
-            </div>
-            <div class="content-item" data-title="Tom Jobim - Garota Ipanema">
-                <h2>Tom Jobim - Garota Ipanema?</h2>
-                <p>Tom F</p>
-                <p>F7M G7(13) Gm7 C7(9-) Am7(11) Ab7(11+) Gm7(11) Gb7(11+) F7M G7(13) Gm7 C7(9-) F7M</p>
-                <p>F#7M B7(9) F#m7 D7(9) Gm7 Eb7(9) Am7 D7(9-) Gm7 C7(9-) F#7M B7(9) F#m7 D7(9) Gm7 Eb7(9)  Am7 D7(9-) Gm7 C7(9-)</p>
-                <p>F7M G7(13) Gm7 C7(9-) F7M</p>
-                <p>C7(9-) F7M C7(9-) F7M C7(9-) F7M C7(9-) F7M</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Vinicius de Morais - Chega de Saudade">
-                <h2>Vinicius de Morais - Chega de Saudade?</h2>
-                <p>Tom D</p>
-                <p>Intro: Gm7(9) Dm7 Bº Bbm6 Dm7 Eb7(9/11+)</p>
-                <p>Dm7 Bº Bbm6 Dm7 Bm7(5-) E7 Am Bb7M A7 A7(13-)</p>
-                <p>Dm7 Bº Bbm6 Am6 Aº Gm7 A7 Dm7 Bº Bbm6 Dm7 Em7(11) A7(9-/13)</p>
-                <p>R: D7M/F# F#m6 E7(9) Em7(9) A7(9-) Fº D6/F# Fº(13-) Em7 E7 Gm6 A7</p>
-                <p>D7M/F# E7(9) F#7 Bm7 Bbm7 Am7 Aº G7M Gm7 F#m7 B7(13) Bm6 A7(4/9) C#m6 B7  (13-) E7(9) A7(4/9) D7M/F# F#º E7(9) A7(4/9) D6(9)</p>
-                <p>D7M/F# E7(9) F#7 Bm7 Bbm7 Am7 Aº G7M Gm7 F#m7 B7(13) Bm6 A7(4/9) C#m6 B7(13-) E7(9) A7(4/  9) D7M/F# F#º E7(9) A7(4/9) D6(9)</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Carolina Deslandes - A Vida Toda">
-                <h2>Carolina Deslandes - A Vida Toda</h2>
-                <p>Tom G</p>
-                <p>Intro: G7M Em7 Bm7 D7</p>
-                <p>A: G7M Em7 Bm7 D7</p>
-                <p>B: C7M C7M/B Am7 Em7 Bm7 C7M D7 Em7</p>
-                <p>R: C7M D7 Em7 Bm7 C7M D7 Em7</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Luiz Gonzaga - O Xote Das Meninas">
-                <h2>Luiz Gonzaga - O Xote Das Meninas?</h2>
-                <p>Tom G</p>
-                <p>Intro: Am  Em  B7  Em E7 Am  D  G  A7  D7  G</p>
-                <p>G  D7  G  G7  C  C  D7  G  Em  Am  D7  G  G7  C  D7  G  Em  Am  D7  G</p>
-                <p>R: F#m7(5-)  B7  Em  F#m7(5-)  B7  Em</p>
-                <p>Am  D7  G  F#m7(5-)  B7  Em  F#m7(5-)  B7  Em  F#m7(5-)  B7  Em  F#m7(5-)  B7  Em</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Tom Zé - Menina Amanhã de Manhã">
-                <h2>Tom Zé - Menina Amanhã de Manhã</h2>
-                <p>Tom E</p>
-                <p>A: E A B E C#m F#m B7 E</p>
-                <p>R: E A B7 E C#m F#m B7 E</p>
-                <p>Final: E Ebº C#m Bm A B7</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Cesare Cremonini - Logico 1">
-                <h2>Cesare Cremonini - Logico 1</h2>
-                <p>Tom Cm</p>
-                <p>A: AbM7	Gm7	Cm7	Gm7	AbM7</p>
-                <p>R: Bb7	Cm7	EbM7	AbM7	Bb7 -- AbM7 -- Cm7 	Bb7	Fm7</p>
-                <p>R2: Bb7	Cm7	EbM7	AbM7	Bb7 -- AbM7 (amore mio la logica) -- EbM7 EbM7	AbM7 Bb7 -- AbM7 (stasera la logica) -- Cm7	Bb7	AbM7 -- Cm7	Bb7	Fm7</p>
-                <p>Final: Fm7 Fm7 Eb7M Bb7</p>
-            </div>
-
-
-            <div class="content-item" data-title="The Beatles- Yesterday">
-                <h2>The Beatles - Yesterday</h2>
-                <p>Tom G</p>
-                <p>A: G F#m B7 Em Em7</p>
-                <p>B: C D G G/F#</p>
-                <p>C: Em A C G</p>
-                <p>R: B7/F#  B7  Em  C Am D  G</p>
-            </div>
-            <div class="content-item" data-title="The Beatles - Hey Jude">
-                <h2>The Beatles - Hey Jude</h2>
-                <p>Tom F</p>
-                <p>A: F C C7 F -- Bb F C F</p>    
-                <p>R: F7 Bb F/A Gm F C/E F F7 -- Bb F/A Gm F C/E F C</p>
-                <p>Final: Eb Bb F</p>
-            </div>
-            <div class="content-item" data-title="The Beatles - Let It Be">
-                <h2>The Beatles - Let It Be</h2>
-                <p>Tom C</p>
-                <p>A: C G Am F F6 C G F (Em/F F6 C)</p>
-                <p>R: Am Am/G F C C G F (Em/F F6 C)</p>
-                <p>Final: F Em/F F6 C -- Bb Am G F C/E</p>
-            </div>
-            <div class="content-item" data-title="The Beatles - Here Comes The Sun">
-                <h2>The Beatles - Here Comes The Sun</h2>
-                <p>Tom G</p>
-                <p>Capo 7</p>
-                <p>A: D G A7</p>
-                <p>P: F C G/B G D A7</p>
-            </div>
-            <div class="content-item" data-title="The Beatles - Don't Let Me Down">
-                <h2>The Beatles - Don't Let Me Down</h2>
-                <p>Tom E</p>
-                <p>A: F#m E</p>
-                <p>R: F#m E</p>
-                <p>B: E B7 B7 E</p>
-            </div>
-            <div class="content-item" data-title="The Beatles - All My Loving">
-                <h2>The Beatles - All My Loving</h2>
-                <p>Tom A</p>
-                <p>A: F#m B E C#m A F#m D B7</p>
-                <p>B: F#m B E C#m A B E</p>
-                <p>R: C#m C#m7M E</p>
-            </div>
-            <div class="content-item" data-title="The Beatles - While My Guitar Gently Weeps">
-                <h2>The Beatles - While My Guitar Gently Weeps</h2>
-                <p>Tom Gm</p>
-                <p>A: Dm Dm/C Dm/B Bb</p>
-                <p>B: Dm C9 G (PréRef F) A</p>
-                <p>R: D F#m Bm F#m Em A</p>
-                <p>Final: Dm  Dm/C  Dm/B  Bb (Dm  C9)</p>
-            </div>
-            <div class="content-item" data-title="The Beatles - Across The Universe">
-                <h2>The Beatles - Across The Universe</h2>
-                <p>Tom D</p>
-                <p>A: D Bm F#m -- Em7 (Gm) A A7</p>
-                <p>R: D A7sus4 A7 -- A A7 -- G D (D)</p>
-            </div>
-            <div class="content-item" data-title="The Beatles - Golden Slumbers">
-                <h2>The Beatles - Golden Slumbers</h2>
-                <p>Tom B</p>
-                <p>A: Am7 Dm  D4/A  D5/A  D4/A -- G7 C</p>
-                <p>B: E Am Dm G7 C</p>
-                <p>R: C F</p>
-                <p>B: E Am Dm G7 C</p>
-            </div>
-            <div class="content-item" data-title="The Beatles - Help!">
-                <h2>The Beatles - Help!</h2>
-                <p>Tom D</p>
-                <p>Intro: Bm G E A</p>
-                <p>A: A C#m F#m -- D G A</p>
-                <p>R: Bm G E A</p>
-                <p>Final: F#m A</p>
-            </div>
-            <div class="content-item" data-title="The Beatles - I Want To Hold Your Hand">
-                <h2>The Beatles - I Want To Hold Your Hand</h2>
-                <p>Tom C</p>
-                <p>A: G D Em B7</p>
-                <p>R: C D G Em</p>
-                <p>P: Dm G C Am -- Dm G C -- C D</p>
-            </div>
-            <div class="content-item" data-title="The Beatles - Strawberry Fields Forever">
-                <h2>The Beatles - Strawberry Fields Forever</h2>
-                <p>Tom A</p>
-                <p>A: Bb Fm G7 -- Eb/Bb G7 Eb/Bb Bb</p>
-                <p>B: F F7+ F7 -- Gm Gm/F Eb/Bb</p>
-                <p>C: Eb/Bb F7 Bb -- Dm7/A Gm -- Eb/Bb F7 Eb/Bb Bb</p>
-                <p>Final: Eb/Bb Bb (F Eb/Bb)</p>
-                <p>Rif: Bb Bb/Ab Bb/Ab Bb Bb</p>
-            </div>
-            <div class="content-item" data-title="The Beatles - Twist And Shout">
-                <h2>The Beatles - Twist And Shout</h2>
-                <p>Tom D</p>
-                <p>A7 D G A</p>
-            </div>
-            <div class="content-item" data-title="The Beatles - We Can Work It Out">
-                <h2>The Beatles - We Can Work It Out</h2>
-                <p>Tom G</p>
-                <p>A: D Dsus4 D - Dsus4 C D</p>
-                <p>R: G D G A</p>
-                <p>P: Bm Bm/A G F#sus4 -- F# Bm Bm/A Bm/G Bm/F#</p>
-            </div>
-           
-
-
-            <div class="content-item" data-title="Teddy Swims - Lose Control">
-                <h2>Teddy Swims - Lose Control</h2>
-                <p>Tom F#</p>
-                <p>F#m A D Db7</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Hozier - Too Sweet">
-                <h2>Hozier - Too Sweet</h2>
-                <p>Tom Gm</p>
-                <p>A: Em  D/F#  G  Am C/B  C  D  B7</p>
-                <p>R: B7 Em D/F# G Am C/B C G (D B7)</p>
-                <p>P: Em  D/F#  G  Am C/B  C G D/F#</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Gnarls Barkley - Crazy">
-                <h2>Gnarls Barkley - Crazy</h2>
-                <p>Tom Cm</p>
-                <p>A: Cm (C) Eb7M Ab G4 G7</p>
-            </div>
-
-
-
-            <div class="content-item" data-title="Zeca Veloso - Todo Homem">
-                <h2>Zeca Veloso - Todo Homem</h2>
-                <p>Tom Db</p>
-                <p>A: F#/G# F#9 F# D#m7 -- F#/G# A#m7</p>
-                <p>R: F# G# Fm7 F# G# C#</p>
-            </div>
-            
-            <div class="content-item" data-title="Francisco, el Hombre - Triste, Louca Ou Má">
-                <h2>Francisco, el Hombre - Triste, Louca Ou Má</h2>
-                <p>Tom Gm</p>
-                <p>Gm F Cm</p>
-            </div>
-
-            <div class="content-item" data-title="Legião Urbana - Tempo Perdido">
-                <h2>Legião Urbana - Tempo Perdido</h2>
-                <p>Tom Em</p>
-                <p>Intro: Em C Am7 Bm</p>
-                <p>A: C Am7 Bm Em (Bm Em)</p>
-            </div>
-            <div class="content-item" data-title="Legião Urbana - Pais e Filhos">
-                <h2>Legião Urbana - Pais e Filhos</h2>
-                <p>Tom G</p>
-                <p>A: C D G</p>
-                <p>B: F Em C Bm Am D</p>
-                <p>R: G C Em C</p>
-                <p>P: C D F Em C Bm Am D</p>
-            </div>
-            <div class="content-item" data-title="Legião Urbana - Será">
-                <h2>Legião Urbana - Será</h2>
-                <p>Tom C</p>
-                <p>Intro: C G Am F</p>
-                <p>A: C G Am F</p>
-                <p>P: C F G</p>
-                <p>R: G Dm (Am F G)</p>
-                <p>B: C G/B Gm/Bb Dm (Dm)</p>
-                <p>Final: G F</p>
-            </div>
-            <div class="content-item" data-title="Legião Urbana - Eduardo e Monica">
-                <h2>Legião Urbana - Eduardo e Monica</h2>
-                <p>Tom E</p>
-                <p>A: E A5/9 D5/9</p>
-                <p>B: B E A E (Bb5  B4)</p>
-                <p>Final: D5(9) E D5(9)  E  D5(9)  E B4 A5(9)  E/G#  F#m7(11)  E</p>
-            </div>
-            <div class="content-item" data-title="Legião Urbana - Vento no Litoral">
-                <h2>Legião Urbana - Vento no Litoral</h2>
-                <p>Intro: Am Em -- F C</p>
-                <p>A: Am Em -- C Bb9 Am F</p>
-                <p>P: G Am F G -- C F Em Dm F Em Dm Bb9 Am</p>
-                <p>B: C F Em Dm G Am G/B F Em Dm Bb9 Am</p>
-                <p>P2: F G Am F G Am Em Am Em C Bb9 Am F G Am F G</p>
-                <p>C: Cm G/B Gm/Bb A7/4 A7 Dm</p>
-                <p>D: C G/B Am G F Em A7 Dm Dm/C Bb9 G C F Bb9 G</p>
-                <p>E: Am Em Am -- G Am G/B -- C F E4 E</p>
-                <p>Final: C Bb9 Am F -- G Am F G C F C</p>
-            </div>
-            <div class="content-item" data-title="Legião Urbana - Índios">
-                <h2>Legião Urbana - Índios</h2>
-                <p>Tom G</p>
-                <p>Intro: G D D11 -- Am7 D22 Bm Em Am D7 Bm Em7</p>
-                <p>A: Am7 D11 Bm7 Em</p>
-                <p>B: C G7M/B Am7 D/F# G D/F# Em C D11 G D/F#</p>
-                <p>C: Em C D11 F11+ G -- C F11+ G</p>
-            </div>
-            <div class="content-item" data-title="Legião Urbana - Ainda É Cedo">
-                <h2>Legião Urbana - Ainda É Cedo</h2>
-                <p>Tom Dm</p>
-                <p>Dm C Am7</p>
-            </div>
-            <div class="content-item" data-title="Legião Urbana - Ainda É Cedo">
-                <h2>Legião Urbana - Ainda É Cedo</h2>
-                <p>Tom Em</p>
-                <p>Em C D</p>
-            </div>
-            <div class="content-item" data-title="Legião Urbana - Há Tempos">
-                <h2>Legião Urbana - Há Tempos</h2>
-                <p>Tom D</p>
-                <p>A: D Am7 (4x) -- G Em</p>
-                <p>B: F C F C D Am7 D G4 G</p>
-                <p>C: D Am7 F C (4x) A4 A A7</p>
-                <p>D: D G</p>
-            </div>
-            <div class="content-item" data-title="Legião Urbana - Quando o Sol Bater Na Janela do Teu Quarto">
-                <h2>Legião Urbana - Quando o Sol Bater Na Janela do Teu Quarto</h2>
-                <p>Tom D</p>
-                <p>R: D D5(7M/9) G G5/F# Em7 A5/9 G D D5/9</p>
-                <p>R2: A5/9 D D5(7M/9) G G5/F# Em7 A5/9 -- G D D5/9 A5/9</p>
-                <p>A: G A5/9 (2x)</p>
-                <p>B: Em A5/9 Em A5/9 -- Bm C9 G D A5/9 Em A5/9</p>
-                <p>Final: G D A5/9 G A D5/9</p>
-            </div>
-            <div class="content-item" data-title="Legião Urbana - Mais Uma Vez">
-                <h2>Legião Urbana - Mais Uma Vez</h2>
-                <p>Tom Gm</p>
-                <p>Capo 1</p>
-                <p>Intro: A5/9 A9 A4+/9 A5/9 A4+/9</p>
-                <p>R: A5/9 B11 C#m7 F#m7/11 B4/7 E4 E A5/9 B11 C#m7 F#m7 B4/7 E4 E</p>
-                <p>A: A5/9 F#m7/11 D5(6/9) Bm7/11 E</p>
-            </div>
-            <div class="content-item" data-title="Legião Urbana - Eu sei">
-                <h2>Legião Urbana - Eu sei</h2>
-                <p>Tom G</p>
-                <p>Intro: D D9</p>
-                <p>A: D Am Em Em7</p>
-                <p>B: G D11/F# Em7 A7/4 A7</p>
-                <p>R: D G C9 G/B C9</p>
-                <p>P: D Am Em Em7</p>
-            </div>
-
-            
-
-            <div class="content-item" data-title="Black Pumas - Colors">
-                <h2>Black Pumas - Colors</h2>
-                <p>Tom F#m</p>
-                <p>F#m A E C#7/F F#m</p>
-            </div>
-            <div class="content-item" data-title="Black Pumas - OCT 33">
-                <h2>Black Pumas - OCT 33</h2>
-                <p>Tom Am</p>
-                <p>Intro: Am Em Dm7 -- Am Bm Em Ebm Dm7</p>
-                <p>A: Am Am/G# Am/F# F F F#* (Am)</p>
-                <p>R: Em Dm7 Am Em Em Dm7</p>
-                <p>Final: Am Em Dm7</p>
-            </div>
-
-
-            <div class="content-item" data-title="Michael Kiwanuka - Cold Little Heart">
-                <h2>Michael Kiwanuka - Cold Little Heart</h2>
-                <p>Tom Gm</p>
-                <p>Intro: Bbm G# Eb/G F# Eb Dm Cm F Gm F Cm F</p>
-                <p>A: Gm F Cm F</p>
-                <p>B: Eb Gm Eb Cm (Gm) -- F Cm F</p>
-                <p>Final: Bbm G# Eb/G F#</p>
-            </div>
-
-
-            <div class="content-item" data-title="Billie Eilish - Chiriro">
-                <h2>Billie Eilish - Chiriro</h2>
-                <p>Tom </p>
-                <p>C7M Am7 G7/9/11 Em7</p>
-            </div>
-
-            
-            
-            <div class="content-item" data-title="Greentea Peng - Hu Man">
-                <h2>Greentea Peng - Hu Man</h2>
-                <p>Tom </p>
-                <p>Am7 D7/9+ D7/9</p>
-            </div>
-
-            
-            
-            <div class="content-item" data-title="Kamauu - MANGO (feat. Adeline)">
-                <h2>Kamauu - MANGO (feat. Adeline)</h2>
-                <p>Tom Dm</p>
-                <p>Bb7M Dm7 Gm7 Am7 Dm7</p>
-            </div>
-
-
-            <div class="content-item" data-title="">
-                <h2></h2>
-                <p>Tom </p>
-            </div>
-            <!-- Adicione mais divs conforme necessário -->
-            <div class="content-item" data-title="">
-                <h2></h2>
-                <p>Tom </p>
-            </div>
-        </div>
-    </div>
-
-    <button onclick="scrollToTop()" id="backToTopBtn" title="Voltar ao topo">⬆️</button>
-
-    <script src="script.js"></script>
+
+<div class="content-item" data-title="Bruno Mars - Marry You">
+<h2>Bruno Mars - Marry You</h2>
+<p>Tom B (2X A final dedilhado)</p>
+<p>Capo 1</p>
+<p>F	Gm	A#	F</p>
+</div>
+
+
+
+<div class="content-item" data-title="Vasco Rossi - Una Canzone Per Te">
+<h2>Vasco Rossi - Una Canzone Per Te</h2>
+<p>Tom C (AA B P A B P)</p>
+<p>RIF: B: 0/1	E: 0</p>
+<p>A: FM7	G	CM7 (2x)</p>
+<p>B: Dm	Dm/C	G -- CM7	C/B	Am -- Dm	Dm/C	(G) -- CM7	C/B	FM7</p>  
+<p>P: C	FM7	(C	G)</p>
+</div>
+<div class="content-item" data-title="Vasco Rossi - Come Nelle Favole">
+<h2>Vasco Rossi - Come Nelle Favole</h2>
+<p>Tom D (Alento A BB R - A R INTER R final)</p>
+<p>D	Bm	G	A	(D) (FinalRef A)</p>
+</div>
+<div class="content-item" data-title="Vasco Rossi - Albachiara">
+<h2>Vasco Rossi - Albachiara</h2>
+<p>Tom C (AAdedi A Arock 5A 2dedi)</p>
+<p>C	G	Am	C -- F	C	D	G7</p>
+</div>
+
+
+<div class="content-item" data-title="Ed Sheeran - Perfect">
+<h2>Ed Sheeran - Perfect</h2>
+<p>Tom G (AA B R P AA R2 final)</p>
+<p>A: G	Em7	C	D	D4</p>
+<p>R: Em7	C	G	D</p>
+</div>
+<div class="content-item" data-title="Ed Sheeran - Photograph">
+<h2>Ed Sheeran - Photograph</h2>
+<p>Tom E (AA B R - A B R Pré R final)</p>
+<p>Capo 1</p>
+<p>A: E	C#m7	B4	A9</p>
+<p>PréRef: C#m7	A9	E	B4</p>
+<p>R: E	B4 	C#m7	A9</p>
+</div>
+
+
+
+<div class="content-item" data-title="Christina Perri - A Thousand Years">
+<h2>Christina Perri - A Thousand Years</h2>
+<p>Tom Bb / Db (AA P R A PP RR PP R final)</p>
+<p>Capo 3</p>
+<p>A: D#9	A#/D	Gm7	F/A	A#5</p>
+<p>Ponte: Cm7 Gm	F9/A</p>
+<p>R: A#	F9/A	Gm	F9/A -- D#	F4	F</p>
+</div>
+
+
+
+<div class="content-item" data-title="Judy Garland - Somewhere Over The Rainbow">
+<h2>Judy Garland - Somewhere Over The Rainbow</h2>
+<p>Tom C (A B A B A final)</p>
+<p>A: C Am7	Em7	C7 - F	F9	C	C7 -- F	Fm	C	A7 -- Dm7	G7	C	(Dm7	G7)</p>
+<p>R: C	Dm7	G7	Dm6	G7 -- C	D7	B4	G7	Dm7	Dm6	G7</p>
+</div>
+
+
+
+<div class="content-item" data-title="Coldplay - Viva La Vida">
+<h2>Coldplay - Viva La Vida</h2>
+<p>Tom Fm</p>
+<p>Capo 1</p>
+<p>C D9/11 G Em</p>
+</div>
+
+
+
+<div class="content-item" data-title="Marlene - Lata D'Água">
+<h2>Marlene - Lata D'Água</h2>
+<p>Tom C</p>
+<p>A: Am F E</p>
+<p>B: Am F E7 E7 Am</p>
+<p>R: E7 Am A7 Dm Dm Am E7 Am</p>
+</div>
+
+
+
+<div class="content-item" data-title="Academia da Berlinda - Dorival">
+<h2>Academia da Berlinda - Dorival</h2>
+<p>Tom F</p>
+<p>A: Gm7 F7</p>
+<p>B: Gm7 F7 Dm7</p>
+<p>R: Dm7 A#7 Am7 A#7 C7 Dm7 Eb7/9 Dm7</p>
+<p>Final: Dm7 Eb7/9</p>
+</div>
+
+
+
+<div class="content-item" data-title="Elis Regina - Tiro ao Alvaro">
+<h2>Elis Regina - Tiro ao Alvaro</h2>
+<p>Tom C</p>
+<p>A: (C) A7 Dm G7 C C7</p>
+<p>B: F Fm C Am Dm G7 C [G7]</p>
+<p>A2: C A7 Dm Dm7M Dm7 G7 G#* C C7/B C/Bb</p>
+<p>B2: F Fm6 C Am Dm G7 C</p>
+<p>R: F G7 C Am Dm G7 C C7</p>
+<p>R2: F Fm C Am Dm G7 C</p>
+<p>Final: F Fm C A7 Dm G7 C C7</p>
+</div>
+
+
+
+<div class="content-item" data-title="Roberto Silva - Falsa Baiana">
+<h2>Roberto Silva - Falsa Baiana</h2>
+<p>Tom A</p>
+<p>Intro: A7M E7/9</p>
+<p>A: A7M B7 E7/9 A7M A7</p>
+<p>B: D7M Dm6 C#m7 F#7 B7 E7/9- A7M (F#7)</p>
+<p>C: Bm7 E7/9- A7M A7 Bm7 E7/9 A7M A7</p>
+<p>D: D7M Dm6 C#m7 F#7 Bm7 E7/9- (A7M E7/9)</p>
+</div>
+
+
+
+<div class="content-item" data-title="Caetano Veloso - Sonhos">
+<h2>Caetano Veloso (Peninha) - Sonhos</h2>
+<p>Tom Cm</p>
+<p>Intro: Cm7(9)  Cm7  Cm7(9) Cm7  Ab6  G7(5+) G7</p>
+<p>A: Cm7 Dm7(5-) G7 C7 C7(9-) Fm7</p>
+<p>B: Dm7(5-) G7 Cm7 Cm7/Bb Ab6 G7</p>
+<p>C: Cm7 Dm7(5-) G7 C7 C7(9-) Fm7</p>
+<p>D: Dm7(5-) Ab7(13) G7 Cm7 Cm7/Bb Ab6 G7</p>
+<p>R: Cm7 Dm7(5-) G7 C7 C7(9-) Fm7</p>
+<p>R2: Dm7(5-) Ab6 G7 Cm7 Cm7 Dm7(5-) Ab7 G7 Cm7 G7(5+) [Cm7]</p>
+</div>
+
+
+
+<div class="content-item" data-title="Milton Nascimento - Quem Sabe Isso Quer Dizer Amor">
+<h2>Milton Nascimento - Quem Sabe Isso Quer Dizer Amor</h2>
+<p>Tom G</p>
+<p>Intro: F#m7(5-)  B7(9-/13-)</p>
+<p>A: Em7(9) Em9/D# Em9/D C#m7(5-) C7M G/B Am7 C/D</p>
+<p>R: G D/F# Dm/F E7 Am Am7M Am7 D4(7)</p>
+<p>R2: G D/F# Dm7 G G/B C Cm7 G/B Em7 Am7 D4(7) G C/G G C/G</p>
+</div>
+
+
+
+<div class="content-item" data-title="Adoniran Barbosa - Trem das Onze">
+<h2>Adoniran Barbosa - Trem das Onze</h2>
+<p>Tom Am</p>
+<p>Intro/R: Dm Bm7(5-) Am/E -- Am Am/G F#° F7 E7 E7/B Am (E7) A7</p>
+<p>A: Am Am/C Am E7 A7</p>
+<p>R2: Dm Bm7(5-) Am F7 E7 E7/D E7/G# Am -- E7</p>
+<p>P: A/C# A7 Dm Dm D#° A° E7</p> 
+</div>
+
+
+
+<div class="content-item" data-title="Julio Secchin - Jovem">
+<h2>Julio Secchin - Jovem</h2>
+<p>Tom Eb</p>
+<p>A: Eb Eb/G Cm7 Eb7(9) Ab7M Ab7M/G Fm7 Bb7 (Eb Bb7)</p>
+<p>R: Eb Bb/D Cm7 Cm7/Bb Ab7M Bb7 Eb Bb7 (Ab7M Bb7 Eb Bb7)</p>
+</div>
+
+
+
+<div class="content-item" data-title="Paulinho da Viola - Timoneiro">
+<h2>Paulinho da Viola - Timoneiro</h2>
+<p>Tom Am</p>
+<p>Intro: Am7 B7 Dm E7</p>
+<p>R: Am7 Bm7(5-) E7 Am7</p>
+<p>R2: Am7/G D/F# Dm/F E7 Am7</p>
+<p>A: Am7 A7 Dm G7 G7 C E7 E7 Am7 Am7/G D/F# Dm/F E7 Am7</p>
+</div>
+
+
+
+<div class="content-item" data-title="Chico Buarque - Geni e o Zepelim">
+<h2>Chico Buarque - Geni e o Zepelim</h2>
+<p>Tom Eb</p>
+<p>A: Cm9 Fm6/C Cm9 Fm6/C Cm9 G7/B (PréR Cm G7) Cm9 (Fm6/C)</p> 
+<p>B: Bb7	Eb/G	G7/B	Cm/G	Am7(b5)	Ab7(#11)	Gm7	G7</p>
+<p>C: Bb/Ab	Eb7M/G	G7/B	Cm/G	Am7(b5)	Ab7(#11)	Gm7	G7</p>
+<p>R: C G7(4) C G7(4) C A7 D7/A G7 Cm7/G Gm7 G7 C</p>
+</div>
+<div class="content-item" data-title="Chico Buarque - Sentimental">
+<h2>Chico Buarque - Sentimental</h2>
+<p>Tom C</p>
+<p>A: F/C C/G C5+ G# F7M Fm6 Em7 D#7M G#7M</p>
+<p>B: F/C C/G C5+/G# F7M Fm6 Em7 D#7M G#7M F/C
+<p>C: D#7M B6/5b C7M C#° Dm7 Dm/C Am7/#5 G#6/5b</p>
+<p>D: C/G C5+/G# F7M Fm6 Em7 D#7M G#7M F/C C/G C5+/G# F7M Fm6</p>
+<p>E: Em7 D#7M G#7M F/C (4x)</p>
+<p>F: D#7M B6/5b Cm7/9 G#6/5b -- C/G C5+/G# F7M Fm6 Em7 D#7M G#7M F/C</p>
+</div>
+<div class="content-item" data-title="Chico Buarque - A Banda">
+<h2>Chico Buarque - A Banda</h2>
+<p>Tom D</p>
+<p>R: D6(9) A7 F#m7 B7 E7(9) A7</p>
+<p>A: D7M A7 Am7 D7(9) G7M F#7 B7(9) E7(9) A7</p>
+<p>A2: D7M A7 Am/C B7 G7M F#7 B7(9) B7 E7(9) A7 (D7M)</p>
+</div>
+<div class="content-item" data-title="Chico Buarque - Essa Moça ta Diferente">
+<h2>Chico Buarque - Essa Moça ta Diferente</h2>
+<p>Tom Bm</p>
+<p>A: Bm7 G7 F#7 Bm7 B7(9-) Em7(9) A7(13) Am6 G7M G7 F#7</p>
+<p>R: Bm7 Bm/A G7M Bm7/F# C#° Bm7 F#7</p>
+<p>R: Bm7 Bm/A G7M Bm7/F# C#° Bm7 G7 F#7</p>
+</div>
+
+
+
+<div class="content-item" data-title="Djavan - Flor de Lis">
+<h2>Djavan - Flor de Lis</h2>
+<p>Tom C</p>
+<p>Intro: C7M(9) Fm6</p>
+<p>A: C7M(9) Bm7(5-) E7(13-) Am7(9) Gm7 C7(9)</p> 
+<p>B: F#m7(5-) B7(9-) Bb7M A7(13-) F#m7(5-) B7(9-) Em7(9) A7(13-) D7(9) G7(4/9) G7(9-) (Gm7)</p>
+<p>R: C7(9) F7M Bb7(9) Em7(9) A7(13-) D7(9) G7(4/9) G7(9-) Gm7 (C6(9) G7(13-))</p>
+</div>
+<div class="content-item" data-title="Djavan - Eu Te Devoro">
+<h2>Djavan - Eu Te Devoro</h2>
+<p>Tom Bm</p>
+<p>A: D7M  Bm7(9)  G7M  (C7/9) Em  A7(4/9)</p>
+<p>R: Bm7 Bm/A G7M -- F#m7  G7M</p>
+</div>
+<div class="content-item" data-title="Djavan - Oceano">
+<h2>Djavan - Oceano</h2>
+<p>Tom </p>
+<p>A: D G7M A7 A#*</p> 
+<p>B: Bm Bm7M Bm7 Bm6 Am7 D7/9 </p>
+<p>C: Gm7 C7/9 F#m7 B7/9- E7/9 A7/4</p>
+<p>R: Dm7 C7(4/9) F7M -- Em7/5- A7/13-</p>
+<p>R2: Dm7 C7(4/9) F7M Gm7 Am7 Bb7M Em7/9 A7/13-</p>
+<p>R3: D F7M G7M C D F7M G7M C D</p>
+<p>Final: F7M G7M C D</p>
+</div>
+<div class="content-item" data-title="Djavan - Samurai">
+<h2>Djavan - Samurai?</h2>
+<p>Tom </p>
+<p>A: E7M  Gº  G#m7  C#7(9) -- E7M  Gº  G#m7  B7(9)</p>
+<p>B: E7M  Gº  G#m7  C#7(9) -- A7M G7M F#m7 B7(9)</p>
+<p>C: E7M  Gº  G#m7  C#7(9) -- A7M A#m7(5-) D#7(9-) </p>
+</div>
+<div class="content-item" data-title="Djavan - Sina">
+<h2>Djavan - Sina</h2>
+<p>Tom </p>
+<p>A: A D/A A G#m7(11) C#7(9-) F#m7 C#m7 D7M D#°</p>
+<p>B: E4(7/9) D4(7/9) D7(9) C#7(9+) C#7(9-/13-) F#m7 -- E4(7/9) D4(7/9) E4(7/9)</p>
+<p>R: A D/A A G#m7(11) C#7(9-) F#m7 C#m7 D7M E4(7/9) A</p>
+<p>P: A D/A</p>
+</div>
+
+
+
+<div class="content-item" data-title="Marina Sena - Me Toca">
+<h2>Marina Sena - Me Toca</h2>
+<p>Tom Cm</p>
+<p>Eb7+ Fm7/b5 Cm7 F7/9</p>
+</div>
+<div class="content-item" data-title="Marina Sena - Ombrim(Ai Que Delícia o Verão)">
+<h2>Marina Sena - Ombrim(Ai Que Delícia o Verão)</h2>
+<p>Tom Bb</p>
+<p>Bb Gm Dm F</p>
+</div>
+<div class="content-item" data-title="Marina Sena - Por Supuesto">
+<h2>Marina Sena - Por Supuesto</h2>
+<p>Tom Dm</p>
+<p>Bb G7 Dm</p>
+</div>
+<div class="content-item" data-title="Marina Sena - Voltei Pra Mim">
+<h2>Marina Sena - Voltei Pra Mim</h2>
+<p>Tom Bb</p>
+<p>Bb7M Gm7 Am7</p>
+</div>
+<div class="content-item" data-title="Marina Sena - Pelejei">
+<h2>Marina Sena - Pelejei</h2>
+<p>Tom Am</p>
+<p>Am7 C7/9 F7M D7/9 (D7/9-)</p>
+</div>
+
+
+
+<div class="content-item" data-title="Tom Jobim - Desafinado">
+<h2>Tom Jobim - Desafinado</h2>
+<p>Tom D</p>
+<p>A: E7M F#7(9) F#m7(9) G° G#m7(5-) C#7(9-) F#m7(9) G#7(13-) C#7M(9) C#7(9-) F#7(9) F7M/A F6/A</p>  
+<p>B: E7M F#7(9) F#m7(9) G° G#m7(5-) C#7(9-) F#m7(9) G#7(13-) C#m7/9 A#° G#7M G7(13-) F#7(13) B7/13</p>
+<p>C: G#7M Aº A#m7 D#7(9) G#7M G#m7 A#m7 D#7(9)</p>
+<p>D: B7M Cº C#m7 F#7(13) F#m7(9) Dm6 F#7(9) B7(9-)</p>
+<p>E: E6 F#7(9) F#m7(9) B7(13) G#m7(5-) C#7(9-)</p>
+<p>F: A7M Am7 G#m7 G° F#7(9) F7M/A F6/A F#7(9) F#m7(9) B7(9-) E6</p>
+<p>Final: E7M E7 E7M E7 E7M E7 E7M E7</p>
+</div>
+<div class="content-item" data-title="Tom Jobim - Garota Ipanema">
+<h2>Tom Jobim - Garota Ipanema</h2>
+<p>Tom F</p>
+<p>A: F7M G7(13) Gm7 C7(9-)</p>
+<p>P: Am7(11) Ab7(11+) Gm7(11) Gb7(11+)</p>
+<p>B: F#7M B7(9) F#m7 D7(9) Gm7 Eb7(9) Am7 D7(9-) Gm7 C7(9-)</p>
+<p>Final: C7(9-) F7M C7(9-) F7M</p>
+</div>
+
+
+
+<div class="content-item" data-title="Vinicius de Morais - Chega de Saudade">
+<h2>Vinicius de Morais - Chega de Saudade?</h2>
+<p>Tom D</p>
+<p>Intro: Gm7(9) Dm7 Bº Bbm6 Dm7 Eb7(9/11+)</p>
+<p>Dm7 Bº Bbm6 Dm7 Bm7(5-) E7 Am Bb7M A7 A7(13-)</p>
+<p>Dm7 Bº Bbm6 Am6 Aº Gm7 A7 Dm7 Bº Bbm6 Dm7 Em7(11) A7(9-/13)</p>
+<p>R: D7M/F# F#m6 E7(9) Em7(9) A7(9-) Fº D6/F# Fº(13-) Em7 E7 Gm6 A7</p>
+<p>D7M/F# E7(9) F#7 Bm7 Bbm7 Am7 Aº G7M Gm7 F#m7 B7(13) Bm6 A7(4/9) C#m6 B7  (13-) E7(9) A7(4/9) D7M/F# F#º E7(9) A7(4/9) D6(9)</p>
+<p>D7M/F# E7(9) F#7 Bm7 Bbm7 Am7 Aº G7M Gm7 F#m7 B7(13) Bm6 A7(4/9) C#m6 B7(13-) E7(9) A7(4/  9) D7M/F# F#º E7(9) A7(4/9) D6(9)</p>
+</div>
+
+
+
+<div class="content-item" data-title="Carolina Deslandes - A Vida Toda">
+<h2>Carolina Deslandes - A Vida Toda</h2>
+<p>Tom G</p>
+<p>Intro: G7M Em7 Bm7 D7</p>
+<p>A: G7M Em7 Bm7 D7</p>
+<p>B: C7M C7M/B Am7 Em7 Bm7 C7M D7 Em7</p>
+<p>R: C7M D7 Em7 Bm7 C7M D7 Em7</p>
+</div>
+
+
+
+<div class="content-item" data-title="Luiz Gonzaga - O Xote Das Meninas">
+<h2>Luiz Gonzaga - O Xote Das Meninas?</h2>
+<p>Tom G</p>
+<p>Intro: Am  Em  B7  Em E7 Am  D  G  A7  D7  G</p>
+<p>G  D7  G  G7  C  C  D7  G  Em  Am  D7  G  G7  C  D7  G  Em  Am  D7  G</p>
+<p>R: F#m7(5-)  B7  Em  F#m7(5-)  B7  Em</p>
+<p>Am  D7  G  F#m7(5-)  B7  Em  F#m7(5-)  B7  Em  F#m7(5-)  B7  Em  F#m7(5-)  B7  Em</p>
+</div>
+
+
+
+<div class="content-item" data-title="Tom Zé - Menina Amanhã de Manhã">
+<h2>Tom Zé - Menina Amanhã de Manhã</h2>
+<p>Tom E</p>
+<p>A: E A B E C#m F#m B7 E</p>
+<p>R: E A B7 E C#m F#m B7 E</p>
+<p>Final: E Ebº C#m Bm A B7</p>
+</div>
+
+
+
+<div class="content-item" data-title="Cesare Cremonini - Logico 1">
+<h2>Cesare Cremonini - Logico 1</h2>
+<p>Tom Cm</p>
+<p>A: AbM7	Gm7	Cm7	Gm7	AbM7</p>
+<p>R: Bb7	Cm7	EbM7	AbM7	Bb7 -- AbM7 -- Cm7 	Bb7	Fm7</p>
+<p>R2: Bb7	Cm7	EbM7	AbM7	Bb7 -- AbM7 (amore mio la logica) -- EbM7 EbM7	AbM7 Bb7 -- AbM7 (stasera la logica) -- Cm7	Bb7	AbM7 -- Cm7	Bb7	Fm7</p>
+<p>Final: Fm7 Fm7 Eb7M Bb7</p>
+</div>
+
+
+<div class="content-item" data-title="The Beatles- Yesterday">
+<h2>The Beatles - Yesterday</h2>
+<p>Tom G</p>
+<p>A: G F#m B7 Em Em7</p>
+<p>B: C D G G/F#</p>
+<p>C: Em A C G</p>
+<p>R: B7/F#  B7  Em  C Am D  G</p>
+</div>
+<div class="content-item" data-title="The Beatles - Hey Jude">
+<h2>The Beatles - Hey Jude</h2>
+<p>Tom F</p>
+<p>A: F C C7 F -- Bb F C F</p>    
+<p>R: F7 Bb F/A Gm F C/E F F7 -- Bb F/A Gm F C/E F C</p>
+<p>Final: Eb Bb F</p>
+</div>
+<div class="content-item" data-title="The Beatles - Let It Be">
+<h2>The Beatles - Let It Be</h2>
+<p>Tom C</p>
+<p>A: C G Am F F6 C G F (Em/F F6 C)</p>
+<p>R: Am Am/G F C C G F (Em/F F6 C)</p>
+<p>Final: F Em/F F6 C -- Bb Am G F C/E</p>
+</div>
+<div class="content-item" data-title="The Beatles - Here Comes The Sun">
+<h2>The Beatles - Here Comes The Sun</h2>
+<p>Tom G</p>
+<p>Capo 7</p>
+<p>A: D G A7</p>
+<p>P: F C G/B G D A7</p>
+</div>
+<div class="content-item" data-title="The Beatles - Don't Let Me Down">
+<h2>The Beatles - Don't Let Me Down</h2>
+<p>Tom E</p>
+<p>A: F#m E</p>
+<p>R: F#m E</p>
+<p>B: E B7 B7 E</p>
+</div>
+<div class="content-item" data-title="The Beatles - All My Loving">
+<h2>The Beatles - All My Loving</h2>
+<p>Tom A</p>
+<p>A: F#m B E C#m A F#m D B7</p>
+<p>B: F#m B E C#m A B E</p>
+<p>R: C#m C#m7M E</p>
+</div>
+<div class="content-item" data-title="The Beatles - While My Guitar Gently Weeps">
+<h2>The Beatles - While My Guitar Gently Weeps</h2>
+<p>Tom Gm</p>
+<p>A: Dm Dm/C Dm/B Bb</p>
+<p>B: Dm C9 G (PréRef F) A</p>
+<p>R: D F#m Bm F#m Em A</p>
+<p>Final: Dm  Dm/C  Dm/B  Bb (Dm  C9)</p>
+</div>
+<div class="content-item" data-title="The Beatles - Across The Universe">
+<h2>The Beatles - Across The Universe</h2>
+<p>Tom D</p>
+<p>A: D Bm F#m -- Em7 (Gm) A A7</p>
+<p>R: D A7sus4 A7 -- A A7 -- G D (D)</p>
+</div>
+<div class="content-item" data-title="The Beatles - Golden Slumbers">
+<h2>The Beatles - Golden Slumbers</h2>
+<p>Tom B</p>
+<p>A: Am7 Dm  D4/A  D5/A  D4/A -- G7 C</p>
+<p>B: E Am Dm G7 C</p>
+<p>R: C F</p>
+<p>B: E Am Dm G7 C</p>
+</div>
+<div class="content-item" data-title="The Beatles - Help!">
+<h2>The Beatles - Help!</h2>
+<p>Tom D</p>
+<p>Intro: Bm G E A</p>
+<p>A: A C#m F#m -- D G A</p>
+<p>R: Bm G E A</p>
+<p>Final: F#m A</p>
+</div>
+<div class="content-item" data-title="The Beatles - I Want To Hold Your Hand">
+<h2>The Beatles - I Want To Hold Your Hand</h2>
+<p>Tom C</p>
+<p>A: G D Em B7</p>
+<p>R: C D G Em</p>
+<p>P: Dm G C Am -- Dm G C -- C D</p>
+</div>
+<div class="content-item" data-title="The Beatles - Strawberry Fields Forever">
+<h2>The Beatles - Strawberry Fields Forever</h2>
+<p>Tom A</p>
+<p>A: Bb Fm G7 -- Eb/Bb G7 Eb/Bb Bb</p>
+<p>B: F F7+ F7 -- Gm Gm/F Eb/Bb</p>
+<p>C: Eb/Bb F7 Bb -- Dm7/A Gm -- Eb/Bb F7 Eb/Bb Bb</p>
+<p>Final: Eb/Bb Bb (F Eb/Bb)</p>
+<p>Rif: Bb Bb/Ab Bb/Ab Bb Bb</p>
+</div>
+<div class="content-item" data-title="The Beatles - Twist And Shout">
+<h2>The Beatles - Twist And Shout</h2>
+<p>Tom D</p>
+<p>A7 D G A</p>
+</div>
+<div class="content-item" data-title="The Beatles - We Can Work It Out">
+<h2>The Beatles - We Can Work It Out</h2>
+<p>Tom G</p>
+<p>A: D Dsus4 D - Dsus4 C D</p>
+<p>R: G D G A</p>
+<p>P: Bm Bm/A G F#sus4 -- F# Bm Bm/A Bm/G Bm/F#</p>
+</div>
+
+
+
+<div class="content-item" data-title="Teddy Swims - Lose Control">
+<h2>Teddy Swims - Lose Control</h2>
+<p>Tom F#</p>
+<p>F#m A D Db7</p>
+</div>
+
+
+
+<div class="content-item" data-title="Hozier - Too Sweet">
+<h2>Hozier - Too Sweet</h2>
+<p>Tom Gm</p>
+<p>Capo 3</p>
+<p>A: Em  D/F#  G  Am C/B  C  D  B7</p>
+<p>R: B7 Em D/F# G Am C/B C G (D B7)</p>
+<p>P: Em  D/F#  G  Am C/B  C G D/F#</p>
+</div>
+
+
+
+<div class="content-item" data-title="Gnarls Barkley - Crazy">
+<h2>Gnarls Barkley - Crazy</h2>
+<p>Tom Cm</p>
+<p>A: Cm (C) Eb7M Ab G4 G7</p>
+</div>
+
+
+
+<div class="content-item" data-title="Zeca Veloso - Todo Homem">
+<h2>Zeca Veloso - Todo Homem</h2>
+<p>Tom Db</p>
+<p>A: F#/G# F#9 F# D#m7 -- F#/G# A#m7</p>
+<p>R: F# G# Fm7 F# G# C#</p>
+</div>
+
+<div class="content-item" data-title="Francisco, el Hombre - Triste, Louca Ou Má">
+<h2>Francisco, el Hombre - Triste, Louca Ou Má</h2>
+<p>Tom Gm</p>
+<p>Gm F Cm</p>
+</div>
+
+<div class="content-item" data-title="Legião Urbana - Tempo Perdido">
+<h2>Legião Urbana - Tempo Perdido</h2>
+<p>Tom Em</p>
+<p>Intro: Em C Am7 Bm</p>
+<p>A: C Am7 Bm Em (Bm Em)</p>
+</div>
+<div class="content-item" data-title="Legião Urbana - Pais e Filhos">
+<h2>Legião Urbana - Pais e Filhos</h2>
+<p>Tom G</p>
+<p>A: C D G</p>
+<p>B: F Em C Bm Am D</p>
+<p>R: G C Em C</p>
+<p>P: C D F Em C Bm Am D</p>
+</div>
+<div class="content-item" data-title="Legião Urbana - Será">
+<h2>Legião Urbana - Será</h2>
+<p>Tom C</p>
+<p>Intro: C G Am F</p>
+<p>A: C G Am F</p>
+<p>P: C F G</p>
+<p>R: G Dm (Am F G)</p>
+<p>B: C G/B Gm/Bb Dm (Dm)</p>
+<p>Final: G F</p>
+</div>
+<div class="content-item" data-title="Legião Urbana - Eduardo e Monica">
+<h2>Legião Urbana - Eduardo e Monica</h2>
+<p>Tom E</p>
+<p>A: E A5/9 D5/9</p>
+<p>B: B E A E (Bb5  B4)</p>
+<p>Final: D5(9) E D5(9)  E  D5(9)  E B4 A5(9)  E/G#  F#m7(11)  E</p>
+</div>
+<div class="content-item" data-title="Legião Urbana - Vento no Litoral">
+<h2>Legião Urbana - Vento no Litoral</h2>
+<p>Intro: Am Em -- F C</p>
+<p>A: Am Em -- C Bb9 Am F</p>
+<p>P: G Am F G -- C F Em Dm F Em Dm Bb9 Am</p>
+<p>B: C F Em Dm G Am G/B F Em Dm Bb9 Am</p>
+<p>P2: F G Am F G Am Em Am Em C Bb9 Am F G Am F G</p>
+<p>C: Cm G/B Gm/Bb A7/4 A7 Dm</p>
+<p>D: C G/B Am G F Em A7 Dm Dm/C Bb9 G C F Bb9 G</p>
+<p>E: Am Em Am -- G Am G/B -- C F E4 E</p>
+<p>Final: C Bb9 Am F -- G Am F G C F C</p>
+</div>
+<div class="content-item" data-title="Legião Urbana - Índios">
+<h2>Legião Urbana - Índios</h2>
+<p>Tom G</p>
+<p>Intro: G D D11 -- Am7 D22 Bm Em Am D7 Bm Em7</p>
+<p>A: Am7 D11 Bm7 Em</p>
+<p>B: C G7M/B Am7 D/F# G D/F# Em C D11 G D/F#</p>
+<p>C: Em C D11 F11+ G -- C F11+ G</p>
+</div>
+<div class="content-item" data-title="Legião Urbana - Ainda É Cedo">
+<h2>Legião Urbana - Ainda É Cedo</h2>
+<p>Tom Dm</p>
+<p>Dm C Am7</p>
+</div>
+<div class="content-item" data-title="Legião Urbana - Há Tempos">
+<h2>Legião Urbana - Há Tempos</h2>
+<p>Tom D</p>
+<p>A: D Am7 (4x) -- G Em</p>
+<p>B: F C F C D Am7 D G4 G</p>
+<p>C: D Am7 F C (4x) A4 A A7</p>
+<p>D: D G</p>
+</div>
+<div class="content-item" data-title="Legião Urbana - Quando o Sol Bater Na Janela do Teu Quarto">
+<h2>Legião Urbana - Quando o Sol Bater Na Janela do Teu Quarto?</h2>
+<p>Tom D</p>
+<p>R: D D5(7M/9) G G5/F# Em7 A5/9 G D D5/9</p>
+<p>R2: A5/9 D D5(7M/9) G G5/F# Em7 A5/9 -- G D D5/9 A5/9</p>
+<p>A: G A5/9 (2x)</p>
+<p>B: Em A5/9 Em A5/9 -- Bm C9 G D A5/9 Em A5/9</p>
+<p>Final: G D A5/9 G A D5/9</p>
+</div>
+<div class="content-item" data-title="Legião Urbana - Mais Uma Vez">
+<h2>Legião Urbana - Mais Uma Vez</h2>
+<p>Tom Gm</p>
+<p>Capo 1</p>
+<p>Intro: A5/9 A9 A4+/9 A5/9 A4+/9</p>
+<p>R: A5/9 B11 C#m7 F#m7/11 B4/7 E4 E A5/9 B11 C#m7 F#m7 B4/7 E4 E</p>
+<p>A: A5/9 F#m7/11 D5(6/9) Bm7/11 E</p>
+</div>
+<div class="content-item" data-title="Legião Urbana - Eu sei">
+<h2>Legião Urbana - Eu sei</h2>
+<p>Tom G</p>
+<p>Intro: D D9</p>
+<p>A: D Am Em Em7</p>
+<p>B: G D11/F# Em7 A7/4 A7</p>
+<p>R: D G C9 G/B</p>
+<p>P: D Am Em Em7</p>
+</div>
+
+
+
+<div class="content-item" data-title="Black Pumas - Colors">
+<h2>Black Pumas - Colors</h2>
+<p>Tom F#m</p>
+<p>F#m A E C#7/F F#m</p>
+</div>
+<div class="content-item" data-title="Black Pumas - OCT 33">
+<h2>Black Pumas - OCT 33</h2>
+<p>Tom Am</p>
+<p>Intro: Am Em Dm7 -- Am Bm Em Ebm Dm7</p>
+<p>A: Am Am/G# Am/F# F F F#* (Am)</p>
+<p>R: Em Dm7 Am Em Em Dm7</p>
+<p>Final: Am Em Dm7</p>
+</div>
+
+
+<div class="content-item" data-title="Michael Kiwanuka - Cold Little Heart">
+<h2>Michael Kiwanuka - Cold Little Heart</h2>
+<p>Tom Gm</p>
+<p>Intro: Bbm G# Eb/G F# Eb Dm Cm F Gm F Cm F</p>
+<p>A: Gm F Cm F</p>
+<p>B: Eb Gm Eb Cm (Gm) -- F Cm F</p>
+<p>Final: Bbm G# Eb/G F#</p>
+</div>
+
+
+<div class="content-item" data-title="Billie Eilish - Chiriro">
+<h2>Billie Eilish - Chiriro</h2>
+<p>Tom </p>
+<p>C7M Am7 Em7 G7/9/11</p>
+</div>
+
+
+
+<div class="content-item" data-title="Greentea Peng - Hu Man">
+<h2>Greentea Peng - Hu Man</h2>
+<p>Tom </p>
+<p>Am7 D7/9+ D7/9</p>
+</div>
+
+
+
+<div class="content-item" data-title="Kamauu - MANGO (feat. Adeline)">
+<h2>Kamauu - MANGO (feat. Adeline)</h2>
+<p>Tom Dm</p>
+<p>Bb7M Dm7 Gm7 Am7 Dm7</p>
+</div>
+
+
+<div class="content-item" data-title="Annalisa - Sinceramente">
+<h2>Annalisa - Sinceramente</h2>
+<p>Tom </p>
+<p>A: Eb7M Bbm7 B7M Bbm7</p>
+<p>R: Eb7M Bbm7 B7M Abm7 Bbm7</p>
+<p>P: Eb7M Bbm7 B7M Db7</p>
+</div>
+
+
+<div class="content-item" data-title="Rose Villain - CLICK BOOM!">
+<h2>Rose Villain - CLICK BOOM!</h2>
+<p>Tom </p>
+<p>A: Am7 Dm7 Gm7 C7</p>
+<p>R: F7M Bb7M Gm7 C7</p>
+</div>
+
+
+
+<div class="content-item" data-title="Ghali - Casa Mia">
+<h2>Ghali - Casa Mia?</h2>
+<p>Tom </p>
+<p>A9 Am7 Am7/G F7M -- Em/G</p>
+</div>
+
+
+
+<div class="content-item" data-title="Måneskin - Beggin'">
+<h2>Måneskin - Beggin'</h2>
+<p>Tom Bm</p>
+<p>R: Bm Em7 C#m7(5-) F#7</p>
+<p>A: Bm G C#m7 (C#m7/5-) F#</p>
+<p>B: G C#m7 F# Bm C#m7(5-) F#</p>
+</div>
+
+
+<!-- Adicione mais divs conforme necessário -->
+<div class="content-item" data-title="">
+<h2></h2>
+<p>Tom </p>
+</div>
+
+</div>
+</div>
+
+<button onclick="scrollToTop()" id="backToTopBtn" title="Voltar ao topo">⬆️</button>
+
+<script src="script.js"></script>
 </body>
 </html>
